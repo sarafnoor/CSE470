@@ -1,0 +1,50 @@
+use coffeedb;
+
+CREATE TABLE employee_cd (
+    empId VARCHAR(10),
+    firstname VARCHAR(15),
+    lastname VARCHAR(15),
+    phoneNO BIGINT,
+    SSN BIGINT,
+    email VARCHAR(25),
+    address VARCHAR(25)
+);
+
+CREATE TABLE inventory_cd(
+
+itemId varchar(10),
+itemName varchar(20),
+itemQuantity bigint
+);
+
+CREATE TABLE itemcatagory_cd(
+
+categoryId bigint,
+categoryName varchar(20)
+);
+
+CREATE TABLE menuitem_cd(
+
+menuItem_cdId varchar(10),
+categoryId bigint,
+menuItem_cdName varchar(15),
+menuItem_cdPrice float(10),
+itemDesc varchar(150)
+);
+
+CREATE TABLE orderss_cd(
+
+orderId bigint,
+userid varchar(10),
+orderItems varchar(400),
+orderPrice float(10)
+);
+
+CREATE TABLE users_cd(
+
+userId varchar(10),
+empId varchar(10),
+username varchar(15),
+password varchar(15),
+role varchar(10)
+);
